@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-In Link - {company}</title>
+    <style>
+      body {
+        background-color: #f3f4f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        background-color: white;
+        max-width: 28rem;
+        width: 100%;
+        padding: 1.5rem;
+        border-radius: 0.375rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        color: #374151;
+      }
+
+      .button {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #1f2937;
+      }
+
+      .email-link {
+        color: #2563eb;
+        text-decoration: underline;
+      }
+
+      .footer {
+        margin-top: 2rem;
+        border-top: 1px solid #e5e7eb;
+        padding-top: 1rem;
+        font-size: 0.875rem;
+        color: #6b7280;
+      }
+
+      .footer a {
+        color: #2563eb;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Your sign-in link</h2>
+      <p>
+        Click the button below to log in to {company}.<br />
+        This button will expire in 10 minutes.
+      </p>
+      <a
+        href="{FRONT-END-URL}/varified-token?token={userToken}"
+        target="_blank"
+        class="button"
+      >
+        Confirm login
+      </a>
+      <p>
+        This request will securely log you in using this email:<br />
+        <a href="mailto:{email}" class="email-link" target="_blank">{email}</a>
+      </p>
+      <div class="footer">
+        &copy; 2023 {company}. All rights reserved.<br />
+        Got questions? Join our
+        <a href="#">Facebook community</a>!
+      </div>
+    </div>
+  </body>
+</html>

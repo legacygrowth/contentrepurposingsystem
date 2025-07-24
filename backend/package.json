@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "axios": "^1.9.0",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "google-auth-library": "^9.15.1",
+    "got": "^11.8.6",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.13.2",
+    "multer": "^2.0.0",
+    "needle": "^3.3.1",
+    "nodemailer": "^6.10.1",
+    "npm": "^11.2.0",
+    "oauth-1.0a": "^2.2.6",
+    "passport": "^0.7.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-linkedin-oauth2": "^2.0.0",
+    "paypal-rest-sdk": "^1.8.1",
+    "start": "^5.1.0",
+    "stripe": "^18.3.0",
+    "twitter-api-v2": "^1.23.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
