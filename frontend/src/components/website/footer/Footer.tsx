@@ -13,7 +13,7 @@ export default function Footer() {
         {/* Company Logo */}
         <div>
           <img
-            src="/logo/ES_logo.png"
+            src="/logo/logo.png"
             alt="YourCompany Logo"
             className="h-16 w-auto"
           />

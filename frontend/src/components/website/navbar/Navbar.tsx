@@ -41,7 +41,7 @@ const Navbar = () => {
   const [dropdown, setDropdown] = useState<string | null>(null);
   const [userDropdown, setUserDropdown] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  
+
   const dispatch = useDispatch();
   const user = useSelector((state: RootState) => state.user);
   const isLoggedIn = !!user.token;
@@ -110,7 +110,7 @@ const Navbar = () => {
       <div className="mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <NavLink to={"/"} className="text-xl font-bold">
-          <img src="/logo/ES_logo.png" alt="Logo" className="h-10 w-auto" />
+          <img src="/logo/logo.png" alt="Logo" className="h-10  w-full " />
         </NavLink>
 
         {/* Desktop Menu */}
@@ -129,9 +129,8 @@ const Navbar = () => {
                 {menu.items && (
                   <ChevronDown
                     size={16}
-                    className={`transition-transform duration-300 ${
-                      dropdown === menu.title ? "rotate-180" : ""
-                    }`}
+                    className={`transition-transform duration-300 ${dropdown === menu.title ? "rotate-180" : ""
+                      }`}
                   />
                 )}
               </div>
@@ -244,9 +243,8 @@ const Navbar = () => {
                   {menu.items && (
                     <ChevronDown
                       size={16}
-                      className={`transition-transform duration-300 ${
-                        dropdown === menu.title ? "rotate-180" : ""
-                      }`}
+                      className={`transition-transform duration-300 ${dropdown === menu.title ? "rotate-180" : ""
+                        }`}
                     />
                   )}
                 </div>
