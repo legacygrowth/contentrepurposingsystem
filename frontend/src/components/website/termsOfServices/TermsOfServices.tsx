@@ -46,14 +46,6 @@ const TermsOfServices = () => {
             We reserve the right to suspend or terminate your access to the Platform at our sole discretion if we determine that you have violated these Terms or are otherwise engaged in behavior that may be harmful to our Platform or its users.
           </p>
           <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
-            Introduction:
-          </h2>
-          <p className="mb-4 text-gray-600 dark:text-gray-300">
-            Users are responsible for regularly reviewing the terms and staying
-            informed about updates. Failure to do so does not exempt users from
-            their obligations under these terms.
-          </p>
-          <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
             4. User Accounts and Access
 
           </h2>
@@ -63,16 +55,6 @@ const TermsOfServices = () => {
           <p className="mb-4 text-gray-600 dark:text-gray-300">
             You agree to provide accurate and complete information during registration and to keep your account information up to date. We are not responsible for any loss or damage arising from your failure to protect your credentials.
           </p>
-
-
-
-
-
-
-
-
-
-
 
           <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
             5. Third-Party Services
